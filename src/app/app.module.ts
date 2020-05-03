@@ -11,7 +11,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FormsComponent } from './forms/forms.component';
 import { CustSearchComponent } from './customer/cust-search/cust-search.component';
 import { CustProfileComponent } from './customer/cust-profile/cust-profile.component';
 import { ProjectSearchComponent } from './project/project-search/project-search.component';
@@ -36,6 +35,7 @@ import { CustFileComponent } from './customer/cust-file/cust-file.component';
 import { ProjectTaskComponent } from './project/project-task/project-task.component';
 import { ProjectTeamComponent } from './project/project-team/project-team.component';
 import { ProjectFileComponent } from './project/project-file/project-file.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,6 @@ import { ProjectFileComponent } from './project/project-file/project-file.compon
     SidebarComponent,
     FooterComponent,
     DashboardComponent,
-    FormsComponent,
     CustSearchComponent,
     CustProfileComponent,
     ProjectSearchComponent,
@@ -69,6 +68,7 @@ import { ProjectFileComponent } from './project/project-file/project-file.compon
     ProjectTaskComponent,
     ProjectTeamComponent,
     ProjectFileComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

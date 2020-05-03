@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FormsComponent } from './forms/forms.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { ProjectSearchComponent } from './project/project-search/project-search.component';
 import { ProjectProfileComponent } from './project/project-profile/project-profile.component';
@@ -19,11 +18,11 @@ import { ViewroleComponent } from './organization/role/viewrole/viewrole.compone
 import { AddroleComponent } from './organization/role/addrole/addrole.component';
 import { ViewemployeeComponent } from './organization/employee/viewemployee/viewemployee.component';
 import { AddemployeeComponent } from './organization/employee/addemployee/addemployee.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'forms', component: FormsComponent },
   { path: 'customer/search', component: CustSearchComponent },
   { path: 'customer/profile', component: CustProfileComponent },
   { path: 'project/search', component: ProjectSearchComponent },
@@ -40,6 +39,7 @@ const routes: Routes = [
   { path: 'addrole', component: AddroleComponent },
   { path: 'viewemployee', component: ViewemployeeComponent },
   { path: 'addemployee', component: AddemployeeComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
