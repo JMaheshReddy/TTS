@@ -1,0 +1,88 @@
+<h3 class="page-heading mb-4">Customer#1</h3>
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <ngb-tabset class="tab-solid tab-solid-primary">
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="mdi mdi-home-outline"></i>Profile
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <form class="forms-sample">
+                                    <div class="form-group">
+                                        <label for="lblCustomerName">Customer Name</label>
+                                        <select class="form-control" id="ddlCustomerName">
+                                            <option value="0">Customer#1</option>
+                                            <option value="1">Customer#2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lblProjectName">Project Name</label>
+                                        <input type="email" class="form-control" id="txtProjectName"
+                                            placeholder="Project Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lblProjectCode">Project Code</label>
+                                        <textarea class="form-control" id="txtProjectCode"
+                                            placeholder="Porject Code"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lblStartDate">Start Date</label>
+                                        <input type="email" class="form-control" id="txtStartDate"
+                                            placeholder="Start Date">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lblEndDate">End Date</label>
+                                        <input type="email" class="form-control" id="txtEndDate"
+                                            placeholder="End Date">
+                                    </div>  
+                                    <div class="form-group">
+                                        <label for="lblProjectDuration">Duration</label>
+                                        <input type="email" class="form-control" id="txtProjectDuration"
+                                            placeholder="Duration">
+                                    </div>
+                                    <button type="submit" class="btn btn-success mr-2">Save</button>
+                                    <button class="btn btn-light">Cancel</button>
+                                </form>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="mdi mdi-message-text-outline"></i>Teams
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <app-project-team></app-project-team>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="mdi mdi-message-text-outline"></i>Tasks
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <app-project-task></app-project-task>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="mdi mdi-message-text-outline"></i>Files
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <app-project-file></app-project-file>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                </ngb-tabset>
+            </div>
+        </div>
+    </div>
+</div>

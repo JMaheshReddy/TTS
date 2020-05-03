@@ -4,8 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsComponent } from './forms/forms.component';
 import { MyworkComponent } from './mywork/mywork.component';
-import { ProjectComponent } from './project/project.component';
-import { CustomerComponent } from './customer/customer.component';
+import { ProjectSearchComponent } from './project/project-search/project-search.component';
+import { ProjectProfileComponent } from './project/project-profile/project-profile.component';
+import { CustSearchComponent } from './customer/cust-search/cust-search.component';
+import { CustProfileComponent } from './customer/cust-profile/cust-profile.component';
 import { SettingComponent } from './setting/setting.component';
 import { ViewprofileComponent } from './organization/profile/viewprofile/viewprofile.component';
 import { AddprofileComponent } from './organization/profile/addprofile/addprofile.component';
@@ -22,8 +24,10 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'forms', component: FormsComponent },
-  { path: 'customers', component: CustomerComponent },
-  { path: 'projects', component: ProjectComponent },
+  { path: 'customer/search', component: CustSearchComponent },
+  { path: 'customer/profile', component: CustProfileComponent },
+  { path: 'project/search', component: ProjectSearchComponent },
+  { path: 'project/profile', component: ProjectProfileComponent },
   { path: 'mywork', component: MyworkComponent },
   { path: 'setting', component: SettingComponent },
   { path: 'viewprofile', component: ViewprofileComponent },

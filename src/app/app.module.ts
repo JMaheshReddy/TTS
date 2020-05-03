@@ -12,8 +12,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsComponent } from './forms/forms.component';
-import { CustomerComponent } from './customer/customer.component';
-import { ProjectComponent } from './project/project.component';
+import { CustSearchComponent } from './customer/cust-search/cust-search.component';
+import { CustProfileComponent } from './customer/cust-profile/cust-profile.component';
+import { ProjectSearchComponent } from './project/project-search/project-search.component';
+import { ProjectProfileComponent } from './project/project-profile/project-profile.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { SettingComponent } from './setting/setting.component';
 import { ViewprofileComponent } from './organization/profile/viewprofile/viewprofile.component';
@@ -27,6 +29,13 @@ import { ViewlocationComponent } from './organization/location/viewlocation/view
 import { AddroleComponent } from './organization/role/addrole/addrole.component';
 import { ViewroleComponent } from './organization/role/viewrole/viewrole.component';
 import { ViewdepartmentComponent } from './organization/department/viewdepartment/viewdepartment.component';
+import { CustLocationComponent } from './customer/cust-location/cust-location.component';
+import { CustContactComponent } from './customer/cust-contact/cust-contact.component';
+import { CustLogoComponent } from './customer/cust-logo/cust-logo.component';
+import { CustFileComponent } from './customer/cust-file/cust-file.component';
+import { ProjectTaskComponent } from './project/project-task/project-task.component';
+import { ProjectTeamComponent } from './project/project-team/project-team.component';
+import { ProjectFileComponent } from './project/project-file/project-file.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +45,10 @@ import { ViewdepartmentComponent } from './organization/department/viewdepartmen
     FooterComponent,
     DashboardComponent,
     FormsComponent,
-    CustomerComponent,
-    ProjectComponent,
+    CustSearchComponent,
+    CustProfileComponent,
+    ProjectSearchComponent,
+    ProjectProfileComponent,
     MyworkComponent,
     SettingComponent    ,
     ViewprofileComponent,
@@ -50,7 +61,14 @@ import { ViewdepartmentComponent } from './organization/department/viewdepartmen
     AddlocationComponent,
     ViewlocationComponent,
     AddroleComponent,
-    ViewroleComponent
+    ViewroleComponent,
+    CustLocationComponent,
+    CustContactComponent,
+    CustLogoComponent,
+    CustFileComponent,
+    ProjectTaskComponent,
+    ProjectTeamComponent,
+    ProjectFileComponent,
   ],
   imports: [
     BrowserModule,
