@@ -16,6 +16,17 @@ import { CustomerComponent } from './customer/customer.component';
 import { ProjectComponent } from './project/project.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { SettingComponent } from './setting/setting.component';
+import { ViewprofileComponent } from './organization/profile/viewprofile/viewprofile.component';
+import { ConfignavbarComponent } from './organization/confignavbar/confignavbar.component';
+import { AddprofileComponent } from './organization/profile/addprofile/addprofile.component';
+import { AdddepartmentComponent } from './organization/department/adddepartment/adddepartment.component';
+import { AddemployeeComponent } from './organization/employee/addemployee/addemployee.component';
+import { ViewemployeeComponent } from './organization/employee/viewemployee/viewemployee.component';
+import { AddlocationComponent } from './organization/location/addlocation/addlocation.component';
+import { ViewlocationComponent } from './organization/location/viewlocation/viewlocation.component';
+import { AddroleComponent } from './organization/role/addrole/addrole.component';
+import { ViewroleComponent } from './organization/role/viewrole/viewrole.component';
+import { ViewdepartmentComponent } from './organization/department/viewdepartment/viewdepartment.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +39,18 @@ import { SettingComponent } from './setting/setting.component';
     CustomerComponent,
     ProjectComponent,
     MyworkComponent,
-    SettingComponent    
+    SettingComponent    ,
+    ViewprofileComponent,
+    ConfignavbarComponent,
+    AddprofileComponent,
+    AdddepartmentComponent,
+    ViewdepartmentComponent,
+    AddemployeeComponent,
+    ViewemployeeComponent,
+    AddlocationComponent,
+    ViewlocationComponent,
+    AddroleComponent,
+    ViewroleComponent
   ],
   imports: [
     BrowserModule,
