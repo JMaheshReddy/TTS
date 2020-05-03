@@ -1,0 +1,72 @@
+<app-confignavbar></app-confignavbar>
+<div class="row">
+    <div class="col-ms-12 col-md-12 col-lg-12">
+        <input type="button" value="Add Role" [routerLink]="['/addrole']"
+            class="btn btn-primary float-right">
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Roles</h5>
+                <div class="fluid-container">
+                    <div class="row ticket-card mt-3 pb-2 border-bottom pb-3 mb-3">                      
+                        <div class="ticket-details col-md-9">
+                            <div class="d-flex">
+                                <p class="text-dark font-weight-semibold mr-2 mb-0 no-wrap">Member</p>
+                            </div>
+                            <p class="text-gray ellipsis mb-2">Description about member role...</p>
+                        </div>
+                        <div class="ticket-actions col-md-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    Modify
+                                </button>
+                                <button type="button" class="btn btn-danger  btn-sm">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ticket-card mt-3 pb-2 border-bottom pb-3 mb-3">
+                        <div class="ticket-details col-md-9">
+                            <div class="d-flex">
+                                <p class="text-dark font-weight-semibold mr-2 mb-0 no-wrap">Lead</p>
+                            </div>
+                            <p class="text-gray ellipsis mb-2">Description about lead role...</p>
+                        </div>
+                        <div class="ticket-actions col-md-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary  btn-sm">
+                                    Modify
+                                </button>
+                                <button type="button" class="btn btn-danger  btn-sm">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ticket-card mt-3">
+                        <div class="ticket-details col-md-9">
+                            <div class="d-flex">
+                                <p class="text-dark font-weight-semibold mr-2 mb-0 no-wrap">Manager</p>
+                            </div>
+                            <p class="text-gray ellipsis mb-2">Description about manager role...</p>
+                        </div>
+                        <div class="ticket-actions col-md-2">
+                            <div class="btn-group float-right">
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    Modify
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
