@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'project/search', component: ProjectSearchComponent },
   { path: 'project/profile', component: ProjectProfileComponent },
   { path: 'mywork', component: MyworkComponent },
-  { path: 'setting', component: SettingComponent },
+  { path: 'settings', component: SettingComponent },
   { path: 'viewprofile', component: ViewprofileComponent },
   { path: 'addprofile', component: AddprofileComponent },
   { path: 'viewdepratment', component: ViewdepartmentComponent },
