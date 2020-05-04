@@ -32,7 +32,7 @@
 
                                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                         ngbDropdownMenu aria-labelledby="messageDropdown">
-                                        <a class="dropdown-item mt-2">
+                                        <a class="dropdown-item mt-2" (click)="open(mymodal)">
                                             Create Time
                                         </a>
                                         <a class="dropdown-item mt-2">
@@ -75,7 +75,7 @@
 
                                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                         ngbDropdownMenu aria-labelledby="messageDropdown">
-                                        <a class="dropdown-item mt-2">
+                                        <a class="dropdown-item mt-2" (click)="open(mymodal)">
                                             Create Time
                                         </a>
                                         <a class="dropdown-item mt-2">
@@ -118,7 +118,7 @@
 
                                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                         ngbDropdownMenu aria-labelledby="messageDropdown">
-                                        <a class="dropdown-item mt-2">
+                                        <a class="dropdown-item mt-2" (click)="open(mymodal)">
                                             Create Time
                                         </a>
                                         <a class="dropdown-item mt-2">
@@ -138,3 +138,19 @@
         </div>
     </div>
 </div>
+
+
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Create Time</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-create-time></app-create-time>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+    </div>
+  </ng-template>

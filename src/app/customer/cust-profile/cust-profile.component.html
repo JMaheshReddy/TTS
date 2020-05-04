@@ -10,28 +10,20 @@
             </ng-template>
             <ng-template ngbTabContent>
               <div class="row">
-                <form class="forms-sample">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="email" class="form-control" id="txtCustomerName" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Profile Info</label>
-                    <textarea class="form-control" id="txtVCustomerProfileInfo" placeholder="Description"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-success mr-2">Save</button>
-                  <button class="btn btn-light">Cancel</button>
-                </form>
-              </div>
-            </ng-template>
-          </ngb-tab>
-          <ngb-tab>
-            <ng-template ngbTabTitle>
-              <i class="mdi mdi-message-text-outline"></i>Logos
-            </ng-template>
-            <ng-template ngbTabContent>
-              <div class="row">
-                <app-cust-logo></app-cust-logo>
+                <div class="col-6 grid-margin">
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name</label>
+                      <input type="email" class="form-control" id="txtCustomerName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Profile Info</label>
+                      <textarea class="form-control" id="txtVCustomerProfileInfo" placeholder="Description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2">Save</button>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
               </div>
             </ng-template>
           </ngb-tab>
@@ -41,7 +33,9 @@
             </ng-template>
             <ng-template ngbTabContent>
               <div class="row">
-                <app-cust-location></app-cust-location>
+                <div class="col-6 grid-margin">
+                  <app-cust-location></app-cust-location>
+                </div>
               </div>
             </ng-template>
           </ngb-tab>
@@ -51,7 +45,21 @@
             </ng-template>
             <ng-template ngbTabContent>
               <div class="row">
-                <app-cust-contact></app-cust-contact>
+                <div class="col-6 grid-margin">
+                  <app-cust-contact></app-cust-contact>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab>
+            <ng-template ngbTabTitle>
+              <i class="mdi mdi-message-text-outline"></i>Logos
+            </ng-template>
+            <ng-template ngbTabContent>
+              <div class="row">
+                <div class="col-6 grid-margin">
+                  <app-cust-logo></app-cust-logo>
+                </div>
               </div>
             </ng-template>
           </ngb-tab>
@@ -61,7 +69,9 @@
             </ng-template>
             <ng-template ngbTabContent>
               <div class="row">
-                <app-cust-file></app-cust-file>
+                <div class="col-6 grid-margin">
+                  <app-cust-file></app-cust-file>
+                </div>
               </div>
             </ng-template>
           </ngb-tab>

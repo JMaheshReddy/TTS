@@ -1,4 +1,4 @@
-<h3 class="page-heading mb-4">Customer#1</h3>
+<h3 class="page-heading mb-4">Project#1</h3>
 <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 grid-margin stretch-card">
         <div class="card">
@@ -10,44 +10,46 @@
                         </ng-template>
                         <ng-template ngbTabContent>
                             <div class="row">
-                                <form class="forms-sample">
-                                    <div class="form-group">
-                                        <label for="lblCustomerName">Customer Name</label>
-                                        <select class="form-control" id="ddlCustomerName">
-                                            <option value="0">Customer#1</option>
-                                            <option value="1">Customer#2</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lblProjectName">Project Name</label>
-                                        <input type="email" class="form-control" id="txtProjectName"
-                                            placeholder="Project Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lblProjectCode">Project Code</label>
-                                        <textarea class="form-control" id="txtProjectCode"
-                                            placeholder="Porject Code"></textarea>
-                                    </div>
+                                <div class="col-6 grid-margin">
+                                    <form class="forms-sample">
+                                        <div class="form-group">
+                                            <label for="lblCustomerName">Customer Name</label>
+                                            <select class="form-control" id="ddlCustomerName">
+                                                <option value="0">Customer#1</option>
+                                                <option value="1">Customer#2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lblProjectName">Project Name</label>
+                                            <input type="email" class="form-control" id="txtProjectName"
+                                                placeholder="Project Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lblProjectCode">Project Code</label>
+                                            <textarea class="form-control" id="txtProjectCode"
+                                                placeholder="Porject Code"></textarea>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="lblStartDate">Start Date</label>
-                                        <input type="email" class="form-control" id="txtStartDate"
-                                            placeholder="Start Date">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="lblStartDate">Start Date</label>
+                                            <input type="email" class="form-control" id="txtStartDate"
+                                                placeholder="Start Date">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="lblEndDate">End Date</label>
-                                        <input type="email" class="form-control" id="txtEndDate"
-                                            placeholder="End Date">
-                                    </div>  
-                                    <div class="form-group">
-                                        <label for="lblProjectDuration">Duration</label>
-                                        <input type="email" class="form-control" id="txtProjectDuration"
-                                            placeholder="Duration">
-                                    </div>
-                                    <button type="submit" class="btn btn-success mr-2">Save</button>
-                                    <button class="btn btn-light">Cancel</button>
-                                </form>
+                                        <div class="form-group">
+                                            <label for="lblEndDate">End Date</label>
+                                            <input type="email" class="form-control" id="txtEndDate"
+                                                placeholder="End Date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lblProjectDuration">Duration</label>
+                                            <input type="email" class="form-control" id="txtProjectDuration"
+                                                placeholder="Duration">
+                                        </div>
+                                        <button type="submit" class="btn btn-success mr-2">Save</button>
+                                        <button class="btn btn-light">Cancel</button>
+                                    </form>
+                                </div>
                             </div>
                         </ng-template>
                     </ngb-tab>
@@ -57,7 +59,9 @@
                         </ng-template>
                         <ng-template ngbTabContent>
                             <div class="row">
-                                <app-project-team></app-project-team>
+                                <div class="col-12 grid-margin">
+                                    <app-project-team></app-project-team>
+                                </div>
                             </div>
                         </ng-template>
                     </ngb-tab>
@@ -67,7 +71,9 @@
                         </ng-template>
                         <ng-template ngbTabContent>
                             <div class="row">
-                                <app-project-task></app-project-task>
+                                <div class="col-12 grid-margin">
+                                    <app-projecttask-list></app-projecttask-list>
+                                </div>
                             </div>
                         </ng-template>
                     </ngb-tab>
@@ -77,7 +83,9 @@
                         </ng-template>
                         <ng-template ngbTabContent>
                             <div class="row">
-                                <app-project-file></app-project-file>
+                                <div class="col-6 grid-margin">
+                                    <app-project-file></app-project-file>
+                                </div>
                             </div>
                         </ng-template>
                     </ngb-tab>

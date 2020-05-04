@@ -31,7 +31,6 @@ import { CustLocationComponent } from './customer/cust-location/cust-location.co
 import { CustContactComponent } from './customer/cust-contact/cust-contact.component';
 import { CustLogoComponent } from './customer/cust-logo/cust-logo.component';
 import { CustFileComponent } from './customer/cust-file/cust-file.component';
-import { ProjectTaskComponent } from './project/project-task/project-task.component';
 import { ProjectTeamComponent } from './project/project-team/project-team.component';
 import { ProjectFileComponent } from './project/project-file/project-file.component';
 import { LoginComponent } from './login/login.component';
@@ -40,6 +39,9 @@ import { TaskComponent } from './shared/task/task.component';
 import { ApplicationSettingComponent } from './setting/application-setting/application-setting.component';
 import { SystemSettingComponent } from './setting/system-setting/system-setting.component';
 import { SourceControlComponent } from './setting/system-setting/source-control/source-control.component';
+import { ProjectTaskListComponent } from './project/project-task/list/list.component';
+import { ProjectTaskSetupComponent } from './project/project-task/setup/setup.component';
+import { CreateTimeComponent } from './shared/create-time/create-time.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,6 @@ import { SourceControlComponent } from './setting/system-setting/source-control/
     CustContactComponent,
     CustLogoComponent,
     CustFileComponent,
-    ProjectTaskComponent,
     ProjectTeamComponent,
     ProjectFileComponent,
     LoginComponent,
@@ -77,6 +78,9 @@ import { SourceControlComponent } from './setting/system-setting/source-control/
     ApplicationSettingComponent,
     SystemSettingComponent,
     SourceControlComponent,
+    ProjectTaskListComponent,
+    ProjectTaskSetupComponent,
+    CreateTimeComponent,
   ],
   imports: [
     BrowserModule,
