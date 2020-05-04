@@ -18,7 +18,6 @@ import { ProjectProfileComponent } from './project/project-profile/project-profi
 import { MyworkComponent } from './mywork/mywork.component';
 import { SettingComponent } from './setting/setting.component';
 import { ViewprofileComponent } from './organization/profile/viewprofile/viewprofile.component';
-import { ConfignavbarComponent } from './organization/confignavbar/confignavbar.component';
 import { AddprofileComponent } from './organization/profile/addprofile/addprofile.component';
 import { AdddepartmentComponent } from './organization/department/adddepartment/adddepartment.component';
 import { AddemployeeComponent } from './organization/employee/addemployee/addemployee.component';
@@ -56,7 +55,6 @@ import { SourceControlComponent } from './setting/system-setting/source-control/
     MyworkComponent,
     SettingComponent    ,
     ViewprofileComponent,
-    ConfignavbarComponent,
     AddprofileComponent,
     AdddepartmentComponent,
     ViewdepartmentComponent,
