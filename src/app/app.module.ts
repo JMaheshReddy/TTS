@@ -36,6 +36,8 @@ import { ProjectTaskComponent } from './project/project-task/project-task.compon
 import { ProjectTeamComponent } from './project/project-team/project-team.component';
 import { ProjectFileComponent } from './project/project-file/project-file.component';
 import { LoginComponent } from './login/login.component';
+import { TimesheetComponent } from './timecard/timesheet/timesheet.component';
+import { TaskComponent } from './shared/task/task.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +71,8 @@ import { LoginComponent } from './login/login.component';
     ProjectTeamComponent,
     ProjectFileComponent,
     LoginComponent,
+    TimesheetComponent,
+    TaskComponent,
   ],
   imports: [
     BrowserModule,

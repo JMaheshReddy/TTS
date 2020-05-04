@@ -19,6 +19,7 @@ import { AddroleComponent } from './organization/role/addrole/addrole.component'
 import { ViewemployeeComponent } from './organization/employee/viewemployee/viewemployee.component';
 import { AddemployeeComponent } from './organization/employee/addemployee/addemployee.component';
 import { LoginComponent } from './login/login.component';
+import { TimesheetComponent } from './timecard/timesheet/timesheet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'viewemployee', component: ViewemployeeComponent },
   { path: 'addemployee', component: AddemployeeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'timecard/timesheet', component: TimesheetComponent },
 ];
 
 @NgModule({
