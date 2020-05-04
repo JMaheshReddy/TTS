@@ -40,6 +40,7 @@ import { TimesheetComponent } from './timecard/timesheet/timesheet.component';
 import { TaskComponent } from './shared/task/task.component';
 import { ApplicationSettingComponent } from './setting/application-setting/application-setting.component';
 import { SystemSettingComponent } from './setting/system-setting/system-setting.component';
+import { SourceControlComponent } from './setting/system-setting/source-control/source-control.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { SystemSettingComponent } from './setting/system-setting/system-setting.
     TaskComponent,
     ApplicationSettingComponent,
     SystemSettingComponent,
+    SourceControlComponent,
   ],
   imports: [
     BrowserModule,

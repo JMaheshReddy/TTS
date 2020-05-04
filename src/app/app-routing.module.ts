@@ -20,6 +20,8 @@ import { ViewemployeeComponent } from './organization/employee/viewemployee/view
 import { AddemployeeComponent } from './organization/employee/addemployee/addemployee.component';
 import { LoginComponent } from './login/login.component';
 import { TimesheetComponent } from './timecard/timesheet/timesheet.component';
+import { SourceControlComponent } from './setting/system-setting/source-control/source-control.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -42,6 +44,7 @@ const routes: Routes = [
   { path: 'addemployee', component: AddemployeeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'timecard/timesheet', component: TimesheetComponent },
+  { path: 'systemsetting/sourcecontrol', component: SourceControlComponent },
 ];
 
 @NgModule({
