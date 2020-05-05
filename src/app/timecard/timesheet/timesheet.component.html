@@ -31,7 +31,7 @@
     <tbody>
         <tr align="center">
             <td scope="col" (click)="getSelectedDateRecords(tempDay)" class="text-white font-weight-bold" 
-                *ngFor="let tempDay of weekDays;" class="{{(tempDay| date:'MMM d, y') == (currentDate| date:'MMM d, y')?'selected':''}}">
+                *ngFor="let tempDay of weekDays;" [ngClass]="getClassName(tempDay)">
                 <a style="cursor: pointer;"> <span>{{tempDay| date:'EEE'|uppercase}}</span><br /><br />
                     <span> {{tempDay| date:'MMM d'}}</span>
                 </a>

@@ -67,4 +67,8 @@ export class TimesheetComponent implements OnInit {
   getSelectedDateRecords = function(selectedDate) {
     this.selectedDate = selectedDate;
   }
+
+  getClassName(date){
+       return ((date.toDateString() == this.selectedDate.toDateString())?'selected':'');
+  }
 };
