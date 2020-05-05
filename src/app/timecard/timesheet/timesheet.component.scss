@@ -1,0 +1,29 @@
+.timetable
+{
+    border-spacing: 15px 50px;
+}
+.timetable thead
+{
+    background-color: rgb(33, 117, 196);
+}
+.timetable tbody
+{
+    background-color: rgb(33, 117, 196);
+}
+.timetable td, th
+{
+    border: 1px solid rgb(197, 209, 212);
+    font-weight: 600;
+}
+
+.timetable td:hover 
+{
+    background-color: #00d9ff;
+    cursor: pointer;
+}
+
+.selected
+{
+    background-color: #00d9ff;
+}
+
