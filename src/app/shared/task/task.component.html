@@ -2,9 +2,31 @@
     <div class="col-12 grid-margin">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title mb-4">My Tasks</h5>
+                <div class="alert alert-info " role="alert">
+                  <h5>  My Tasks - Today {{(currentDate| date:'dd/MM/y')}}</h5>
+                  </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <div class="input-group float-right">
+                            <input type="text" class="form-control" placeholder="search by project, task name"
+                                aria-label="search by project, task name" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-success btn-lg btn-sm float-right"
+                                    aria-label="Left Align">
+                                    <svg class="bi bi-filter" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M6 10.5a.5.5 0 01.5-.5h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5zm-2-3a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5zm-2-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Filter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="fluid-container">
-                    <div class="row ticket-card mt-3 pb-2 border-bottom pb-3 mb-3">
+                    <div class="row ticket-card mt-3 pb-2 border-bottom pb-3 mb-3">                        
                         <div class="ticket-details col-md-9">
                             <div class="d-flex">
                                 <p class="text-primary mr-1 mb-0">[#23047]</p>
@@ -142,15 +164,15 @@
 
 <ng-template #mymodal let-modal>
     <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Create Time</h4>
-      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-        <span aria-hidden="true">×</span>
-      </button>
+        <h4 class="modal-title" id="modal-basic-title">Create Time</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">×</span>
+        </button>
     </div>
     <div class="modal-body">
-      <app-create-time></app-create-time>
+        <app-create-time></app-create-time>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
     </div>
-  </ng-template>
+</ng-template>

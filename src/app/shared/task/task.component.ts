@@ -11,6 +11,7 @@ export class TaskComponent implements OnInit {
   title = 'appBootstrap';
   
   closeResult: string;
+  currentDate = new Date();
   
   constructor(private modalService: NgbModal) {}
 

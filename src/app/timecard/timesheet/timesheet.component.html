@@ -1,47 +1,48 @@
-<div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12" align="center">
-        <button type="button" class="btn btn-primary btn-sm float-left" (click)="changeWeek(false)">Prev</button>
-        <span class="text-dark">{{weekDays[0]| date:'MMM d, y'}} - {{weekDays[6]| date:'MMM d, y'}}</span>
-        <button type="button" class="btn btn-primary btn-sm float-right" (click)="changeWeek(true)">Next</button>
-    </div>
-</div>
-<div class="table-responsive d-none d-lg-block d-md-block d-xl-block">
-    <table class="table timetable">
-        <tbody>
-            <tr align="center">
-                <td scope="col" (click)="getSelectedDateRecords(tempDay)" class="text-white font-weight-bold"
-                    *ngFor="let tempDay of weekDays;" [ngClass]="getClassName(tempDay)">
-                    <a style="cursor: pointer;"> <span>{{tempDay| date:'EEE'|uppercase}}</span><br /><br />
-                        <span> {{tempDay| date:'MMM d'}}</span>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="table-responsive .d-block .d-sm-none d-xs-block d-lg-none  d-xl-none  d-md-none">
-    <table class="table timetable">
-        <tbody>
-            <tr align="center">
-                <td scope="col" (click)="getSelectedDateRecords(tempDay)" class="text-white font-weight-bold"
-                    *ngFor="let tempDay of weekDays;" [ngClass]="getClassName(tempDay)">
-                    <a style="cursor: pointer;"> <span>{{tempDay| date:'EEEEE'|uppercase}}</span><br /><br />
-                        <span> {{tempDay| date:'d'}}</span>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+
 
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
                 <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <button type="button" class="btn btn-primary btn-sm" (click)="changeWeek(false)">Prev</button>&nbsp;
+                        <button type="button" class="btn btn-primary btn-sm" (click)="changeWeek(true)">Next</button>&nbsp;
+                        <span class="text-dark">{{weekDays[0]| date:'MMM d, y'}} - {{weekDays[6]| date:'MMM d, y'}}</span>
+                    </div>
+                </div>
+                <div class="table-responsive d-none d-lg-block d-md-block d-xl-block">
+                    <table class="table timetable">
+                        <tbody>
+                            <tr align="center">
+                                <td scope="col" (click)="getSelectedDateRecords(tempDay)" class="text-white font-weight-bold"
+                                    *ngFor="let tempDay of weekDays;" [ngClass]="getClassName(tempDay)">
+                                    <a style="cursor: pointer;"> <span>{{tempDay| date:'EEE'|uppercase}}</span><br /><br />
+                                        <span> {{tempDay| date:'MMM d'}}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive .d-block .d-sm-none d-xs-block d-lg-none  d-xl-none  d-md-none">
+                    <table class="table timetable">
+                        <tbody>
+                            <tr align="center">
+                                <td scope="col" (click)="getSelectedDateRecords(tempDay)" class="text-white font-weight-bold"
+                                    *ngFor="let tempDay of weekDays;" [ngClass]="getClassName(tempDay)">
+                                    <a style="cursor: pointer;"> <span>{{tempDay| date:'EEEEE'|uppercase}}</span><br /><br />
+                                        <span> {{tempDay| date:'d'}}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-8">
                         <h4 class="card-title">
-                            Date: <b> {{(selectedDate| date:'dd/M/y')}} </b>
+                            Date: <b> {{(selectedDate| date:'dd/MM/y')}} </b>
                             &nbsp;&nbsp;Total Actual: <b>8hr</b>
                         </h4>
                     </div>
@@ -78,7 +79,7 @@
                                                 </p>
                                                 <p class="text-primary mr-1 mb-0">Projec Name 1</p>
                                             </div>
-                                            <p class="text-gray ellipsis mb-2">Task: #ID: task name</p>
+                                            <p class="text-gray ellipsis mb-2"><b>Task: #ID: </b>task name</p>
                                             <small class="mb-0 mr-2 text-muted text-muted">Logged Effort: 4 hr</small>
                                         </div>
                                         <div class="ticket-actions col-md-4">
@@ -97,7 +98,7 @@
                                                 </p>
                                                 <p class="text-primary mr-1 mb-0">Projec Name 2</p>
                                             </div>
-                                            <p class="text-gray ellipsis mb-2">Task: #ID: task name 2</p>
+                                            <p class="text-gray ellipsis mb-2"><b>Task: #ID: </b>task name 2</p>
                                             <small class="mb-0 mr-2 text-muted text-muted">Logged Effort: 2 hr</small>
                                         </div>
                                         <div class="ticket-actions col-md-4">
@@ -116,7 +117,7 @@
                                                 </p>
                                                 <p class="text-primary mr-1 mb-0">Projec Name 3</p>
                                             </div>
-                                            <p class="text-gray ellipsis mb-2">Task: #ID: task name 3</p>
+                                            <p class="text-gray ellipsis mb-2"><b>Task: #ID: </b>task name 3</p>
                                             <small class="mb-0 mr-2 text-muted text-muted">Logged Effort: 2 hr</small>
                                         </div>
                                         <div class="ticket-actions col-md-4">
